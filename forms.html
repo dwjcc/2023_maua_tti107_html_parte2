@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+        <!-- Controle de form -->
+    <form>
+        <label for="email">Email</label>
+        <input type="email" id="email">
+        <label for="cor">Cor</label>
+        <input type="color" id="cor">
+        <!-- estado = 2 -->
+        <label for="estado">Estado</label>
+        <select id="estado" name="estado">
+            <option value="1">São Paulo</option>
+            <option value="2">Rio de Janeiro</option>
+            <option value="3">Espiríto Santo</option>
+            <option value="4">Minas Gerais</option>
+        </select>
+        <!-- name para agrupar -->
+        <fieldset>
+            <legend>Escolha um veículo</legend>
+            <input
+                id="x1" 
+                type="radio"
+                name="veiculo">
+            <label for="x1">X1</label>
+            <input
+                id="celta" 
+                type="radio" 
+                name="veiculo">
+            <label for="celta">Celta</label>
+            <input
+                id="nivus" 
+                type="radio" 
+                name="veiculo">
+            <label for="nivus">Nivus</label>
+        </fieldset>
+        <fieldset>
+            <legend>De quais cores você gosta?</legend>
+            <input
+                name="cor" 
+                type="checkbox" 
+                id="vermelho">
+            <label for="vermelho">Vermelho</label>
+            <input
+                name="cor" 
+                type="checkbox" 
+                id="azul">
+            <label for="azul">Azul</label>
+        </fieldset>
+        
+        <input type="submit" value="Enviar"></input>
+    </form>
+</body>
+</html>
